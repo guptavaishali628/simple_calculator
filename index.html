@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myback()
+        {
+            let str=document.getElementById('textbox').value;
+            let mylen=str.length;
+            let mydata=str.slice(0, mylen-1);
+            document.getElementById("textbox").value=mydata;
+
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+    <input type="text" id="textbox">
+   <button id="btn1" value="1" onclick="document.getElementById('textbox').value+=document.getElementById('btn1').value">1</button>
+   <button id="btn2" value="2" onclick="document.getElementById('textbox').value+=document.getElementById('btn2').value">2</button>
+   <button id="btn3" value="3" onclick="document.getElementById('textbox').value+=document.getElementById('btn3').value">3</button>
+   <button id="btn4" value="4" onclick="document.getElementById('textbox').value+=document.getElementById('btn4').value">4</button>
+   <button id="btn5" value="5" onclick="document.getElementById('textbox').value+=document.getElementById('btn5').value">5</button>
+   <button id="btn6" value="6" onclick="document.getElementById('textbox').value+=document.getElementById('btn6').value">6</button>
+   <button id="btn7" value="7" onclick="document.getElementById('textbox').value+=document.getElementById('btn7').value">7</button>
+   <button id="btn8" value="8" onclick="document.getElementById('textbox').value+=document.getElementById('btn8').value">8</button>
+   <button id="btn9" value="9" onclick="document.getElementById('textbox').value+=document.getElementById('btn9').value">9</button>
+   <button id="btn0" value="0" onclick="document.getElementById('textbox').value+=document.getElementById('btn0').value">0</button>
+   <button id="btnadd" value="+" onclick="document.getElementById('textbox').value+=document.getElementById('btnadd').value">+</button>
+   <button id="btnsub" value="-" onclick="document.getElementById('textbox').value+=document.getElementById('btnsub').value">-</button>
+   <button id="btndot" value="." onclick="document.getElementById('textbox').value+=document.getElementById('btndot').value">.</button>
+   <button id="btnmulti" value="*" onclick="document.getElementById('textbox').value+=document.getElementById('btnmulti').value">*</button>
+   <button id="btndiv" value="/" onclick="document.getElementById('textbox').value+=document.getElementById('btndiv').value">/</button>
+   <button id="btns" value="+" onclick="document.getElementById('textbox').value=eval(document.getElementById('textbox').value)">=</button>
+   <button style="width: 80px;" onclick="document.getElementById('textbox').value=''">CLR</button>
+    <button style="width: 80px;" onclick="myback();">del</button>
+    </div>
+</body>
+</html>
